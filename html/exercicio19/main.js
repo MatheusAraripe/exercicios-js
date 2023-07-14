@@ -1,6 +1,5 @@
 const getUserInfos = () => {
     const userName = document.getElementById("userName").value;
-    console.log(userName);
 
     fetch('https://api.github.com/users/' + userName)
     .then(response => response.json())
